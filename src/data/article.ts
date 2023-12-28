@@ -41,6 +41,29 @@ export const articleList: Article[] = [
       },
     ],
   },
+  {
+    id: 2,
+    title: 'useRef 사용해서 만든 드롭다운',
+    date_created: '2023-12-28',
+    check_points: [
+      {
+        type: 'text',
+        content:
+          'button과 nav태그를 감싸고 있는 div에 ref를 걸어줘야한다. 클릭시 이 영역이 포함되냐 안되냐를 확인하기 때문에',
+      },
+      {
+        type: 'text',
+        content:
+          'useDetectOutsideClick에서 27-29 line, 상태가 true가 되면서 드롭다운이 열릴 때, 윈도우에 리스너를 달아주는게 포인트',
+      },
+    ],
+    improve_points: [
+      {
+        type: 'text',
+        content: 'modal도 useState가 아니라 만든 hook으로 관리가 가능한가?',
+      },
+    ],
+  },
 ];
 
 export function getArticle(id: number): Article {
