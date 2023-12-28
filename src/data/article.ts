@@ -57,12 +57,7 @@ export const articleList: Article[] = [
           'useDetectOutsideClick에서 27-29 line, 상태가 true가 되면서 드롭다운이 열릴 때, 윈도우에 리스너를 달아주는게 포인트',
       },
     ],
-    improve_points: [
-      {
-        type: 'text',
-        content: 'modal도 useState가 아니라 만든 hook으로 관리가 가능한가?',
-      },
-    ],
+    improve_points: [],
   },
 ];
 

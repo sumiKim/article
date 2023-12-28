@@ -22,7 +22,7 @@ export default function ArticleMemo({ article_id }: { article_id: number }) {
             ))}
           </ul>
         </div>
-        <div>
+        <div className={improve_points.length === 0 ? 'hidden' : 'block'}>
           <p>&#91;ImprovePoints&#93;</p>
           <ul className='pl-5 list-inside list-square'>
             {improve_points.map((point, index) =>
